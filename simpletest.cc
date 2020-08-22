@@ -9,6 +9,7 @@ int main(){
     Vector<int> v2 = Vector<int>();
     v2.push_back(4);
     v1.swap(v2);
+    v1.erase(v1.begin());
     v1.print();
     for (auto o = v2.begin(); o != v2.end(); ++o){
         std::cout << *o;
